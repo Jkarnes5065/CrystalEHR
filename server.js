@@ -343,6 +343,10 @@ app.get("/allPatients/sort", function(req, res) {
 
 
 // Set the app to listen on port 3000
-app.listen(3000, function() {
-  console.log("App running on port 3000!");
+// app.listen(3000, function() {
+//   console.log("App running on port 3000!");
+// });
+
+app.listen(process.env.PORT || 3000, function(){
+  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
 });
