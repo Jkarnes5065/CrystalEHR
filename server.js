@@ -11,6 +11,7 @@ var session = require('express-session');
 var LocalStrategy = require('passport-local').Strategy;
 
 var User = require('./models/User');
+var Add = mongoose.model('add', model, 'crystalehr');
 
 // Initialize Express
 var app = express();
